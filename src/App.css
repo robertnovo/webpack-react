@@ -1,0 +1,6 @@
+:root {
+  --some-cool: #336699;
+}
+.container {
+  color: var(--some-cool);
+}

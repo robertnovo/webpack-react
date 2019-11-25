@@ -1,11 +1,12 @@
 import React, { useState, lazy, Suspense } from 'react';
+import styles from './App.css';
 
 const Warning = lazy(() => import('./Warning'));
 
 function App() {
   const [count, setCount] = useState(0);
   return (
-    <div>
+    <div className={styles.container}>
       <h1>Hello world</h1>
       {count > 3 && (
         <Suspense fallback={null}>
